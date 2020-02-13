@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-formio-custom-demo';
+  builder = true;
+  form: any = {};
+
+  onChange(event: any) {
+    console.log(event);
+    if (['addComponent', 'saveComponent', 'deleteComponent'].indexOf(event.type) > -1) {
+      this.form = event.form;
+    }
+  }
 }
