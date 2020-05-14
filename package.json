@@ -23,7 +23,7 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@ng-bootstrap/ng-bootstrap": "6.0.2",
     "@webcomponents/custom-elements": "1.4.1",
-    "angular-formio": "4.7.0",
+    "angular-formio": "git+https://git@github.com/merobal/angular-formio-deploy.git#debug",
     "bootstrap": "4.4.1",
     "lodash": "^4.17.15",
     "rxjs": "~6.5.4",

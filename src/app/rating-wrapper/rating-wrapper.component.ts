@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { FormioCustomComponent } from 'angular-formio';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormioCustomComponent } from 'angular-formio';
   templateUrl: './rating-wrapper.component.html',
   styleUrls: ['./rating-wrapper.component.scss']
 })
-export class RatingWrapperComponent implements FormioCustomComponent<number> {
+export class RatingWrapperComponent implements FormioCustomComponent<number>, OnInit {
   @Input()
   value: number;
 
@@ -15,4 +15,8 @@ export class RatingWrapperComponent implements FormioCustomComponent<number> {
 
   @Input()
   disabled: boolean;
+
+  ngOnInit() {
+    console.log('onInit');
+  }
 }
